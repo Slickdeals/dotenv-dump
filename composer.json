@@ -1,0 +1,10 @@
+{
+    "name": "sd/dotenv-dump",
+    "description": "Composer plugin to dump Dotenv files",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "require": {
+        "php": "^7.0",
+        "composer-plugin-api": "^1.0"
+    }
+}
