@@ -7,7 +7,6 @@ use Composer\IO\IOInterface;
 use Composer\Plugin\Capability\CommandProvider;
 use Composer\Plugin\Capable;
 use Composer\Plugin\PluginInterface;
-use SD\DotenvDump\Command\DumpEnvCommand;
 
 class DotenvDump implements PluginInterface, Capable
 {
@@ -18,7 +17,7 @@ class DotenvDump implements PluginInterface, Capable
     public function getCapabilities()
     {
         return [
-            CommandProvider::class => DumpEnvCommand::class,
+            CommandProvider::class => \SD\DotenvDump\CommandProvider::class,
         ];
     }
 }
